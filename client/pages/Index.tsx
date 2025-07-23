@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { accounts } from '../data/accounts';
+import { ImageWithLoader } from '../components/ui/image-with-loader';
 
 const PlatformLogo = ({ platform }: { platform: string }) => {
   const logoProps = "w-8 h-8";
@@ -294,13 +295,10 @@ export default function Index() {
               >
                 <div className="aspect-video bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center overflow-hidden">
                   {account.images && account.images.length > 0 ? (
-                    <img
+                    <ImageWithLoader
                       src={account.images[0]}
                       alt={account.name + ' cover'}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTAwIiBmaWxsPSIjOWNhM2FmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkltYWdlIE5vdCBGb3VuZDwvdGV4dD4KPC9zdmc+Cg==';
-                      }}
+                      className="w-full h-full"
                     />
                   ) : (
                     <span className="text-6xl">🎮</span>
@@ -431,13 +429,10 @@ export default function Index() {
                 {/* Media Gallery */}
                 <div className="space-y-6">
                   <div className="relative bg-gray-100 rounded-2xl overflow-hidden aspect-video">
-                    <img
+                    <ImageWithLoader
                       src={selectedAccount.images[currentImageIndex]}
                       alt={`${selectedAccount.name} screenshot ${currentImageIndex + 1}`}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTAwIiBmaWxsPSIjOWNhM2FmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkltYWdlIE5vdCBGb3VuZDwvdGV4dD4KPHN2Zz4K';
-                      }}
+                      className="w-full h-full"
                     />
                     
                     {/* Navigation Arrows */}
