@@ -4,7 +4,7 @@ export const accounts = [
     name: "UI | AKSHAT",
     uid: "297807549",
     level: 80,
-    rank: "Grandmaster",
+    rank: "master",
     description: "Top-tier Free Fire account with rare skins and exclusive items. Perfect for competitive gameplay.",
     images: [
       "/assets/40000-id/1.jpg",
