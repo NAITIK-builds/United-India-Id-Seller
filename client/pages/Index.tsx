@@ -13,6 +13,7 @@ const PlatformLogo = ({ platform }: { platform: string }) => {
             src="https://acgl.gg/files/arenas/free-fire-logo-C6E10447C6-seeklogo.com__0.png"
             alt="Free Fire Logo"
             className="w-10 h-10"
+            objectFit="contain"
           />
         </div>
       );
