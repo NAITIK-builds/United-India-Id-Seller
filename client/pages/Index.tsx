@@ -8,11 +8,12 @@ const PlatformLogo = ({ platform }: { platform: string }) => {
   switch (platform) {
     case 'Free Fire':
       return (
-        <div className="w-20 h-20 bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-          <svg className={logoProps} viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 16 L12 6 L16 16 L12 13 Z"/>
-            <circle cx="12" cy="10" r="2"/>
-          </svg>
+        <div className="w-20 h-20 bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 p-4">
+          <ImageWithLoader
+            src="https://acgl.gg/files/arenas/free-fire-logo-C6E10447C6-seeklogo.com__0.png"
+            alt="Free Fire Logo"
+            className="w-10 h-10"
+          />
         </div>
       );
     case 'Instagram':

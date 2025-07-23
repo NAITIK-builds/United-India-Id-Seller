@@ -51,7 +51,7 @@ export function ImageWithLoader({ src, alt, className, onError, fallbackSrc }: I
         src={src}
         alt={alt}
         className={cn(
-          "w-full h-full object-cover transition-opacity duration-300",
+          "w-full h-full object-contain transition-opacity duration-300",
           isLoading ? "opacity-0" : "opacity-100"
         )}
         onLoad={handleLoad}
