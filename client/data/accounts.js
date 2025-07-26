@@ -67,7 +67,6 @@ export const accounts = [
       "/assets/18000-id/3.jpg",
       "/assets/18000-id/4.jpg",
       "/assets/18000-id/5.jpg",
-      "/assets/18000-id/6.jpg",
       "/assets/18000-id/7.jpg",
       "/assets/18000-id/8.jpg",
       "/assets/18000-id/9.jpg",
